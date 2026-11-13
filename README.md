@@ -98,10 +98,10 @@ Installation
 > [!IMPORTANT]
 > BASE_URL=https://www.saucedemo.com  
 > API_BASE_URL=https://jsonplaceholder.typicode.com  
-  
+> 
 > STANDARD_USER=standard_user  
 > STANDARD_PASSWORD=secret_sauce  
-  
+> 
 > LOCKED_USER=locked_out_user  
     
 *__Remember:__ .env should remain local and should not be committed to GitHub.*  
