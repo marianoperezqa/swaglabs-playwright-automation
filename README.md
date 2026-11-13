@@ -144,32 +144,34 @@ LOCKED_USER=locked_out_user
 
 //UI Automation Coverage//  
   
-Test ID	            Scenario  
-TC_LOGIN_001	    Successful login  
-TC_LOGIN_002	    Invalid credentials  
-TC_LOGIN_003	    Locked out user  
-TC_LOGIN_004	    Empty credentials  
-TC_INV_001	        Verify inventory products  
-TC_INV_002	        Add product to cart  
-TC_INV_003	        Sort products by price  
-TC_INV_004	        Logout  
-TC_CART_001	        Add multiple products  
-TC_CART_002	        Remove product from cart  
-TC_CART_003	        Verify cart contents  
-TC_CHECKOUT_001	    Complete purchase  
-TC_CHECKOUT_002	    Validate required information  
+Test ID	         |  Scenario  
+-----------------|-------------------  
+TC_LOGIN_001	 |  Successful login  
+TC_LOGIN_002	 |  Invalid credentials  
+TC_LOGIN_003	 |  Locked out user  
+TC_LOGIN_004	 |  Empty credentials  
+TC_INV_001	     |  Verify inventory products  
+TC_INV_002	     |  Add product to cart  
+TC_INV_003	     |  Sort products by price  
+TC_INV_004	     |  Logout  
+TC_CART_001	     |  Add multiple products  
+TC_CART_002	     |  Remove product from cart  
+TC_CART_003	     |  Verify cart contents  
+TC_CHECKOUT_001	 |  Complete purchase  
+TC_CHECKOUT_002	 |  Validate required information  
   
 //API Automation Coverage//  
   
-Test ID	    HTTP Method	    Endpoint	    Scenario  
-API_001	    GET	            /posts	        Retrieve all posts  
-API_002	    GET	            /posts/1	    Retrieve post by ID  
-API_003	    GET	            /posts?userId=1	Filter posts by user  
-API_004	    POST	        /posts	        Create a post  
-API_005	    PUT	            /posts/1	    Update a post  
-API_006	    PATCH	        /posts/1	    Partially update a post  
-API_007	    DELETE	        /posts/1	    Delete a post  
-API_008	    GET	            /posts/9999	    Validate nonexistent resource  
+Test ID	 | HTTP Method	|   Endpoint	     |  Scenario  
+---------|--------------|--------------------|--------------------
+API_001	 |  GET	        |   /posts	         |  Retrieve all posts  
+API_002	 |  GET	        |   /posts/1	     |  Retrieve post by ID  
+API_003	 |  GET	        |   /posts?userId=1	 |  Filter posts by user  
+API_004	 |  POST	    |   /posts	         |  Create a post  
+API_005	 |  PUT	        |   /posts/1	     |  Update a post  
+API_006	 |  PATCH	    |   /posts/1	     |  Partially update a post  
+API_007	 |  DELETE	    |   /posts/1	     |  Delete a post  
+API_008	 |  GET	        |   /posts/9999	     |  Validate nonexistent resource  
   
 *Note: JSONPlaceholder simulates write operations. POST, PUT, PATCH and DELETE requests do not permanently modify the remote database.*  
 
