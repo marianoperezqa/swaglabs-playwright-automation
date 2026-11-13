@@ -1,220 +1,220 @@
-Swag Labs – Playwright Automation Framework
-
-//Overview//
-
-This project is an automated testing framework for the Swag Labs web application, built using Playwright, TypeScript, and Page Object Model (POM).
-
-The framework supports both UI automation and REST API testing, following a modular and reusable architecture.
-
-swaglabs-automation/
-│
-├── src/
-│   ├── pages/
-│   │   ├── BasePage.ts
-│   │   ├── LoginPage.ts
-│   │   ├── InventoryPage.ts
-│   │   ├── CartPage.ts
-│   │   └── CheckoutPage.ts
-│   │
-│   ├── api/
-│   │   └── PostService.ts
-│   │
-│   ├── fixtures/
-│   │   ├── testFixtures.ts
-│   │   └── apiFixtures.ts
-│   │
-│   └── data/
-│       ├── users.ts
-│       └── products.ts
-│
-├── tests/
-│   ├── ui/
-│   │   ├── login.spec.ts
-│   │   ├── inventory.spec.ts
-│   │   ├── cart.spec.ts
-│   │   └── checkout.spec.ts
-│   │
-│   └── api/
-│       └── post.spec.ts
-│
-├── .github/
-│   └── workflows/
-│       └── playwright.yml
-│
-├── .env.example
-├── .gitignore
-├── package.json
-├── package-lock.json
-├── playwright.config.ts
-├── tsconfig.json
-└── README.md
-
--------------------------------------------------------------------------
-
-//Prerequisites//
-
-Before installing the project, make sure you have:
-
--Node.js (LTS)                      https://nodejs.org/en/download
--Git                                https://git-scm.com/install/
--Visual Studio Code (recommended)   https://visualstudio.microsoft.com/downloads/
-
--Verify installations using PowerShell:
-
-`node --version`
-`npm --version`
-`git --version`
+Swag Labs – Playwright Automation Framework<br>
+<br>
+//Overview//<br>
+<br>
+This project is an automated testing framework for the Swag Labs web application, built using Playwright, TypeScript, and Page Object Model (POM).<br>
+<br>
+The framework supports both UI automation and REST API testing, following a modular and reusable architecture.<br>
+<br>
+swaglabs-automation/<br>
+│<br>
+├── src/<br>
+│   ├── pages/<br>
+│   │   ├── BasePage.ts<br>
+│   │   ├── LoginPage.ts<br>
+│   │   ├── InventoryPage.ts<br>
+│   │   ├── CartPage.ts<br>
+│   │   └── CheckoutPage.ts<br>
+│   │<br>
+│   ├── api/<br>
+│   │   └── PostService.ts<br>
+│   │<br>
+│   ├── fixtures/<br>
+│   │   ├── testFixtures.ts<br>
+│   │   └── apiFixtures.ts<br>
+│   │<br>
+│   └── data/<br>
+│       ├── users.ts<br>
+│       └── products.ts<br>
+│<br>
+├── tests/<br>
+│   ├── ui/<br>
+│   │   ├── login.spec.ts<br>
+│   │   ├── inventory.spec.ts<br>
+│   │   ├── cart.spec.ts<br>
+│   │   └── checkout.spec.ts<br>
+│   │<br>
+│   └── api/<br>
+│       └── post.spec.ts<br>
+│<br>
+├── .github/<br>
+│   └── workflows/<br>
+│       └── playwright.yml<br>
+│<br>
+├── .env.example<br>
+├── .gitignore<br>
+├── package.json<br>
+├── package-lock.json<br>
+├── playwright.config.ts<br>
+├── tsconfig.json<br>
+└── README.md<br>
 
 -------------------------------------------------------------------------
 
-//Installation//
-
-1. Clone the repository
-*Open PowerShell and navigate to the directory where you want the project.*
-`git clone https://github.com/marianoperezqa/swaglabs-playwright-automation.git`
-
-2. Navigate to the project
-
-`cd swaglabs-playwright-automation`
-
-3. Install dependencies
-*This reads package.json and installs Playwright, TypeScript, dotenv and the other dependencies.*
-*If your repository contains package-lock.json, npm will use it to install the locked dependency versions.*
-
-`npm ci`
-
-4. Install Playwright browsers
-
-`npx playwright install`
-
-5. Configure environment variables
--Copy the example environment file:
-
-`Copy-Item .env.example .env`
-
--Configure the following variables:
-//////////////////////////////////////////////////
-BASE_URL=https://www.saucedemo.com
-API_BASE_URL=https://jsonplaceholder.typicode.com
-
-STANDARD_USER=standard_user
-STANDARD_PASSWORD=secret_sauce
-
-LOCKED_USER=locked_out_user
-//////////////////////////////////////////////////
-*Remember: .env should remain local and should not be committed to GitHub.*
+//Prerequisites//<br>
+<br>
+Before installing the project, make sure you have:<br>
+<br>
+-Node.js (LTS)                      https://nodejs.org/en/download<br>
+-Git                                https://git-scm.com/install/<br>
+-Visual Studio Code (recommended)   https://visualstudio.microsoft.com/downloads/<br>
+<br>
+-Verify installations using PowerShell:<br>
+<br>
+`node --version`<br>
+`npm --version`<br>
+`git --version`<br>
 
 -------------------------------------------------------------------------
 
-//Running Tests//
+//Installation//<br>
 
--Execute all tests
+1. Clone the repository<br>
+*Open PowerShell and navigate to the directory where you want the project.*<br>
+`git clone https://github.com/marianoperezqa/swaglabs-playwright-automation.git`<br>
 
-`npm test`
+2. Navigate to the project<br>
 
--Execute UI tests
+`cd swaglabs-playwright-automation`<br>
 
-`npm run test:ui`
+3. Install dependencies<br>
+*This reads package.json and installs Playwright, TypeScript, dotenv and the other dependencies.*<br>
+*If your repository contains package-lock.json, npm will use it to install the locked dependency versions.*<br>
 
--Execute API tests
+`npm ci`<br>
 
-`npm run test:api`
+4. Install Playwright browsers<br>
 
--Execute tests in headed mode
+`npx playwright install`<br>
 
-`npm run test:headed`
+5. Configure environment variables<br>
+-Copy the example environment file:<br>
 
--Execute tests in Chromium
+`Copy-Item .env.example .env`<br>
 
-`npm run test:chrome`
+-Configure the following variables:<br>
+//////////////////////////////////////////////////<br>
+BASE_URL=https://www.saucedemo.com<br>
+API_BASE_URL=https://jsonplaceholder.typicode.com<br>
+<br>
+STANDARD_USER=standard_user<br>
+STANDARD_PASSWORD=secret_sauce<br>
+<br>
+LOCKED_USER=locked_out_user<br>
+//////////////////////////////////////////////////<br>
+*Remember: .env should remain local and should not be committed to GitHub.*<br>
+<br>
+-------------------------------------------------------------------------
+<br>
+//Running Tests//<br>
 
--Debug tests
+-Execute all tests<br>
 
-`npm run test:debug`
+`npm test`<br>
 
--Validate TypeScript
+-Execute UI tests<br>
 
-`npx tsc --noEmit`
+`npm run test:ui`<br>
 
--Open HTML report
+-Execute API tests<br>
 
-`npm run report`
+`npm run test:api`<br>
+
+-Execute tests in headed mode<br>
+
+`npm run test:headed`<br>
+
+-Execute tests in Chromium<br>
+
+`npm run test:chrome`<br>
+
+-Debug tests<br>
+
+`npm run test:debug`<br>
+
+-Validate TypeScript<br>
+
+`npx tsc --noEmit`<br>
+
+-Open HTML report<br>
+
+`npm run report`<br>
 
 -------------------------------------------------------------------------
 
-//UI Automation Coverage//
-
-Test ID	            Scenario
-TC_LOGIN_001	    Successful login
-TC_LOGIN_002	    Invalid credentials
-TC_LOGIN_003	    Locked out user
-TC_LOGIN_004	    Empty credentials
-TC_INV_001	        Verify inventory products
-TC_INV_002	        Add product to cart
-TC_INV_003	        Sort products by price
-TC_INV_004	        Logout
-TC_CART_001	        Add multiple products
-TC_CART_002	        Remove product from cart
-TC_CART_003	        Verify cart contents
-TC_CHECKOUT_001	    Complete purchase
-TC_CHECKOUT_002	    Validate required information
-
-//API Automation Coverage//
-
-Test ID	    HTTP Method	    Endpoint	    Scenario
-API_001	    GET	            /posts	        Retrieve all posts
-API_002	    GET	            /posts/1	    Retrieve post by ID
-API_003	    GET	            /posts?userId=1	Filter posts by user
-API_004	    POST	        /posts	        Create a post
-API_005	    PUT	            /posts/1	    Update a post
-API_006	    PATCH	        /posts/1	    Partially update a post
-API_007	    DELETE	        /posts/1	    Delete a post
-API_008	    GET	            /posts/9999	    Validate nonexistent resource
-
-*Note: JSONPlaceholder simulates write operations. POST, PUT, PATCH and DELETE requests do not permanently modify the remote database.*
-
--------------------------------------------------------------------------
-
-//Reporting//
-
-Playwright HTML Reporter generates execution reports containing:
-
-.Test execution status
-.Execution duration
-.Error details
-.Screenshots on failure
-.Traces on failure
-.Video recordings on failure
-
--Reports can be opened using:
-
-`npm run report`
+//UI Automation Coverage//<br>
+<br>
+Test ID	            Scenario<br>
+TC_LOGIN_001	    Successful login<br>
+TC_LOGIN_002	    Invalid credentials<br>
+TC_LOGIN_003	    Locked out user<br>
+TC_LOGIN_004	    Empty credentials<br>
+TC_INV_001	        Verify inventory products<br>
+TC_INV_002	        Add product to cart<br>
+TC_INV_003	        Sort products by price<br>
+TC_INV_004	        Logout<br>
+TC_CART_001	        Add multiple products<br>
+TC_CART_002	        Remove product from cart<br>
+TC_CART_003	        Verify cart contents<br>
+TC_CHECKOUT_001	    Complete purchase<br>
+TC_CHECKOUT_002	    Validate required information<br>
+<br>
+//API Automation Coverage//<br>
+<br>
+Test ID	    HTTP Method	    Endpoint	    Scenario<br>
+API_001	    GET	            /posts	        Retrieve all posts<br>
+API_002	    GET	            /posts/1	    Retrieve post by ID<br>
+API_003	    GET	            /posts?userId=1	Filter posts by user<br>
+API_004	    POST	        /posts	        Create a post<br>
+API_005	    PUT	            /posts/1	    Update a post<br>
+API_006	    PATCH	        /posts/1	    Partially update a post<br>
+API_007	    DELETE	        /posts/1	    Delete a post<br>
+API_008	    GET	            /posts/9999	    Validate nonexistent resource<br>
+<br>
+*Note: JSONPlaceholder simulates write operations. POST, PUT, PATCH and DELETE requests do not permanently modify the remote database.*<br>
 
 -------------------------------------------------------------------------
 
-//CI/CD Integration//
+//Reporting//<br>
+<br>
+Playwright HTML Reporter generates execution reports containing:<br>
+<br>
+.Test execution status<br>
+.Execution duration<br>
+.Error details<br>
+.Screenshots on failure<br>
+.Traces on failure<br>
+.Video recordings on failure<br>
+<br>
+-Reports can be opened using:<br>
 
-GitHub Actions is configured to execute automation tests automatically on:
+`npm run report`<br>
 
-.Push to the main branch
-.Pull requests targeting main
-.Manual workflow execution
+-------------------------------------------------------------------------
 
-*Test reports and execution artifacts are uploaded to GitHub Actions.*
+//CI/CD Integration//<br>
+<br>
+GitHub Actions is configured to execute automation tests automatically on:<br>
+<br>
+.Push to the main branch<br>
+.Pull requests targeting main<br>
+.Manual workflow execution<br>
 
-//Architecture//
+*Test reports and execution artifacts are uploaded to GitHub Actions.*<br>
 
-The framework follows Page Object Model principles:
-
-.Page classes encapsulate UI locators and actions.
-.API services encapsulate HTTP operations.
-.Fixtures provide reusable test dependencies.
-.Test data is separated from test logic.
-.Configuration is centralized in Playwright configuration files.
-.Future Enhancements
-.Allure reporting
-.JSON Schema validation
-.Data-driven testing
-.Smoke and regression test tagging
-.Docker integration
-.Extended API/UI integration testing
+//Architecture//<br>
+<br>
+The framework follows Page Object Model principles:<br>
+<br>
+.Page classes encapsulate UI locators and actions.<br>
+.API services encapsulate HTTP operations.<br>
+.Fixtures provide reusable test dependencies.<br>
+.Test data is separated from test logic.<br>
+.Configuration is centralized in Playwright configuration files.<br>
+.Future Enhancements<br>
+.Allure reporting<br>
+.JSON Schema validation<br>
+.Data-driven testing<br>
+.Smoke and regression test tagging<br>
+.Docker integration<br>
+.Extended API/UI integration testing<br>
