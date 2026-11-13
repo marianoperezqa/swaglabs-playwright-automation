@@ -1,7 +1,7 @@
-Swag Labs – Playwright Automation Framework# Heading 1  
-  
-Overview## Heading 2  
-  
+Swag Labs – Playwright Automation Framework
+===
+Overview
+---
 This project is an automated testing framework for the Swag Labs web application, built using Playwright, TypeScript, and Page Object Model (POM).  
   
 The framework supports both UI automation and REST API testing, following a modular and reusable architecture.  
