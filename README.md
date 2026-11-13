@@ -1,6 +1,6 @@
-Swag Labs – Playwright Automation Framework  
+Swag Labs – Playwright Automation Framework  # Heading 1  
   
-//Overview//  
+Overview  ## Heading 2  
   
 This project is an automated testing framework for the Swag Labs web application, built using Playwright, TypeScript, and Page Object Model (POM).  
   
@@ -51,13 +51,13 @@ swaglabs-automation/
 
 -------------------------------------------------------------------------
 
-//Prerequisites//  
+Prerequisites  ## Heading 2  
   
 Before installing the project, make sure you have:  
   
--Node.js (LTS)                      https://nodejs.org/en/download  
--Git                                https://git-scm.com/install/  
--Visual Studio Code (recommended)   https://visualstudio.microsoft.com/downloads/  
+-Node.js (LTS)                    | https://nodejs.org/en/download  
+-Git                              | https://git-scm.com/install/  
+-Visual Studio Code (recommended) | https://visualstudio.microsoft.com/downloads/  
   
 -Verify installations using PowerShell:  
   
@@ -67,10 +67,11 @@ Before installing the project, make sure you have:
 
 -------------------------------------------------------------------------
 
-//Installation//  
+Installation  ## Heading 2  
 
 1. Clone the repository  
 *Open PowerShell and navigate to the directory where you want the project.*  
+
 `git clone https://github.com/marianoperezqa/swaglabs-playwright-automation.git`  
 
 2. Navigate to the project  
@@ -93,20 +94,21 @@ Before installing the project, make sure you have:
 `Copy-Item .env.example .env`  
 
 -Configure the following variables:  
-//////////////////////////////////////////////////  
-BASE_URL=https://www.saucedemo.com  
-API_BASE_URL=https://jsonplaceholder.typicode.com  
   
-STANDARD_USER=standard_user  
-STANDARD_PASSWORD=secret_sauce  
+> [!IMPORTANT]
+> BASE_URL=https://www.saucedemo.com  
+> API_BASE_URL=https://jsonplaceholder.typicode.com  
   
-LOCKED_USER=locked_out_user  
-//////////////////////////////////////////////////  
-*Remember: .env should remain local and should not be committed to GitHub.*  
+> STANDARD_USER=standard_user  
+> STANDARD_PASSWORD=secret_sauce  
+  
+> LOCKED_USER=locked_out_user  
+    
+*__Remember:__ .env should remain local and should not be committed to GitHub.*  
   
 -------------------------------------------------------------------------
   
-//Running Tests//  
+Running Tests  ## Heading 2  
 
 -Execute all tests  
 
@@ -142,7 +144,7 @@ LOCKED_USER=locked_out_user
 
 -------------------------------------------------------------------------
 
-//UI Automation Coverage//  
+UI Automation Coverage  ## Heading 2  
   
 Test ID	         |  Scenario  
 -----------------|-------------------  
@@ -160,7 +162,7 @@ TC_CART_003	     |  Verify cart contents
 TC_CHECKOUT_001	 |  Complete purchase  
 TC_CHECKOUT_002	 |  Validate required information  
   
-//API Automation Coverage//  
+API Automation Coverage  ## Heading 2  
   
 Test ID	 | HTTP Method	|   Endpoint	     |  Scenario  
 ---------|--------------|--------------------|--------------------
@@ -173,11 +175,11 @@ API_006	 |  PATCH	    |   /posts/1	     |  Partially update a post
 API_007	 |  DELETE	    |   /posts/1	     |  Delete a post  
 API_008	 |  GET	        |   /posts/9999	     |  Validate nonexistent resource  
   
-*Note: JSONPlaceholder simulates write operations. POST, PUT, PATCH and DELETE requests do not permanently modify the remote database.*  
+*__Note:__ JSONPlaceholder simulates write operations. POST, PUT, PATCH and DELETE requests do not permanently modify the remote database.*  
 
 -------------------------------------------------------------------------
 
-//Reporting//  
+Reporting  ## Heading 2  
   
 Playwright HTML Reporter generates execution reports containing:  
   
@@ -194,7 +196,7 @@ Playwright HTML Reporter generates execution reports containing:
 
 -------------------------------------------------------------------------
 
-//CI/CD Integration//  
+CI/CD Integration  ## Heading 2  
   
 GitHub Actions is configured to execute automation tests automatically on:  
   
@@ -204,7 +206,7 @@ GitHub Actions is configured to execute automation tests automatically on:
 
 *Test reports and execution artifacts are uploaded to GitHub Actions.*  
 
-//Architecture//  
+Architecture  ## Heading 2  
   
 The framework follows Page Object Model principles:  
   
