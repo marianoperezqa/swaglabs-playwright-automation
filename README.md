@@ -1,6 +1,6 @@
-Swag Labs – Playwright Automation Framework  # Heading 1  
+Swag Labs – Playwright Automation Framework# Heading 1  
   
-Overview  ## Heading 2  
+Overview## Heading 2  
   
 This project is an automated testing framework for the Swag Labs web application, built using Playwright, TypeScript, and Page Object Model (POM).  
   
@@ -51,7 +51,7 @@ swaglabs-automation/
 
 -------------------------------------------------------------------------
 
-Prerequisites  ## Heading 2  
+Prerequisites## Heading 2  
   
 Before installing the project, make sure you have:  
   
@@ -67,7 +67,7 @@ Before installing the project, make sure you have:
 
 -------------------------------------------------------------------------
 
-Installation  ## Heading 2  
+Installation## Heading 2  
 
 1. Clone the repository  
 *Open PowerShell and navigate to the directory where you want the project.*  
@@ -108,7 +108,7 @@ Installation  ## Heading 2
   
 -------------------------------------------------------------------------
   
-Running Tests  ## Heading 2  
+Running Tests## Heading 2  
 
 -Execute all tests  
 
@@ -144,7 +144,7 @@ Running Tests  ## Heading 2
 
 -------------------------------------------------------------------------
 
-UI Automation Coverage  ## Heading 2  
+UI Automation Coverage## Heading 2  
   
 Test ID	         |  Scenario  
 -----------------|-------------------  
@@ -162,7 +162,7 @@ TC_CART_003	     |  Verify cart contents
 TC_CHECKOUT_001	 |  Complete purchase  
 TC_CHECKOUT_002	 |  Validate required information  
   
-API Automation Coverage  ## Heading 2  
+API Automation Coverage## Heading 2  
   
 Test ID	 | HTTP Method	|   Endpoint	     |  Scenario  
 ---------|--------------|--------------------|--------------------
@@ -179,7 +179,7 @@ API_008	 |  GET	        |   /posts/9999	     |  Validate nonexistent resource
 
 -------------------------------------------------------------------------
 
-Reporting  ## Heading 2  
+Reporting## Heading 2  
   
 Playwright HTML Reporter generates execution reports containing:  
   
@@ -196,7 +196,7 @@ Playwright HTML Reporter generates execution reports containing:
 
 -------------------------------------------------------------------------
 
-CI/CD Integration  ## Heading 2  
+CI/CD Integration## Heading 2  
   
 GitHub Actions is configured to execute automation tests automatically on:  
   
@@ -206,7 +206,7 @@ GitHub Actions is configured to execute automation tests automatically on:
 
 *Test reports and execution artifacts are uploaded to GitHub Actions.*  
 
-Architecture  ## Heading 2  
+Architecture## Heading 2  
   
 The framework follows Page Object Model principles:  
   
