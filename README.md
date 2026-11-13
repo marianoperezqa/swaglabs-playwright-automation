@@ -51,8 +51,8 @@ swaglabs-automation/
 
 -------------------------------------------------------------------------
 
-Prerequisites## Heading 2  
-  
+Prerequisites
+---  
 Before installing the project, make sure you have:  
   
 -Node.js (LTS)                    | https://nodejs.org/en/download  
@@ -67,8 +67,8 @@ Before installing the project, make sure you have:
 
 -------------------------------------------------------------------------
 
-Installation## Heading 2  
-
+Installation
+---
 1. Clone the repository  
 *Open PowerShell and navigate to the directory where you want the project.*  
 
@@ -108,8 +108,8 @@ Installation## Heading 2
   
 -------------------------------------------------------------------------
   
-Running Tests## Heading 2  
-
+Running Tests
+---
 -Execute all tests  
 
 `npm test`  
@@ -144,8 +144,8 @@ Running Tests## Heading 2
 
 -------------------------------------------------------------------------
 
-UI Automation Coverage## Heading 2  
-  
+UI Automation Coverage
+---
 Test ID	         |  Scenario  
 -----------------|-------------------  
 TC_LOGIN_001	 |  Successful login  
@@ -162,8 +162,8 @@ TC_CART_003	     |  Verify cart contents
 TC_CHECKOUT_001	 |  Complete purchase  
 TC_CHECKOUT_002	 |  Validate required information  
   
-API Automation Coverage## Heading 2  
-  
+API Automation Coverage 
+---
 Test ID	 | HTTP Method	|   Endpoint	     |  Scenario  
 ---------|--------------|--------------------|--------------------
 API_001	 |  GET	        |   /posts	         |  Retrieve all posts  
@@ -179,8 +179,8 @@ API_008	 |  GET	        |   /posts/9999	     |  Validate nonexistent resource
 
 -------------------------------------------------------------------------
 
-Reporting## Heading 2  
-  
+Reporting
+---
 Playwright HTML Reporter generates execution reports containing:  
   
 .Test execution status  
@@ -196,8 +196,8 @@ Playwright HTML Reporter generates execution reports containing:
 
 -------------------------------------------------------------------------
 
-CI/CD Integration## Heading 2  
-  
+CI/CD Integration 
+---
 GitHub Actions is configured to execute automation tests automatically on:  
   
 .Push to the main branch  
@@ -206,8 +206,8 @@ GitHub Actions is configured to execute automation tests automatically on:
 
 *Test reports and execution artifacts are uploaded to GitHub Actions.*  
 
-Architecture## Heading 2  
-  
+Architecture
+---
 The framework follows Page Object Model principles:  
   
 .Page classes encapsulate UI locators and actions.  
